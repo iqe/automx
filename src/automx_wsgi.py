@@ -47,11 +47,11 @@ except ImportError:
     # noinspection PyCompatibility
     from urllib2 import urlopen, Request, HTTPError
 
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+
 from automx.config import Config
 from automx.config import DataNotFoundException
 from automx.view import View
-
-sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 
 
 __version__ = '1.1.1'
