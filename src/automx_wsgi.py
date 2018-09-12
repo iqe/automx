@@ -65,7 +65,7 @@ STAT_ERR = "500 Internal Server Error"
 
 def application(environ, start_response):
 
-    response_body = ""
+    response_body = b""
     cn = None
     emailaddress = None
     password = None
